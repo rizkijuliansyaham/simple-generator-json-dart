@@ -20,9 +20,7 @@ Didesain khusus untuk arsitektur **Clean Architecture Flutter**, agar pengembang
 ## 🧩 Cara Menggunakan
 
 1. Buka aplikasi di browser (misal:  
-   ```
-   https://rizkijuliansyaham.github.io/simple-generator-json-dart/
-   ```
+   [**https://rizkijuliansyaham.github.io/simple-generator-json-dart/**](https://rizkijuliansyaham.github.io/simple-generator-json-dart/)
    )
 
 2. Masukkan **nama class utama** (misalnya `TravelHistoryItem`).
