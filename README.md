@@ -1,4 +1,4 @@
-# 🧩 Flutter Model & Entity Generator (Build Version)
+# 🧩 Flutter Model & Entity Generator
 
 Aplikasi web ini digunakan untuk **mengubah JSON menjadi class Entity & Model Dart** secara otomatis.  
 Didesain khusus untuk arsitektur **Clean Architecture Flutter**, agar pengembang dapat memisahkan layer `Entity` dan `Model` dengan mudah.
