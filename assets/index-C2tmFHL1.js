@@ -45,7 +45,7 @@ ${M}
   });
 
   factory ${_}Model.fromJson(Map<String, dynamic> json) => ${_}Model(
-${g.map(([O,A])=>A.startsWith("List<")?`    ${O}: (json['${O}'] as List?)?.map((e) => ${A.replace("List<","").replace(">","")}Model.fromJson(e)).toList() ?? [],`:/^[A-Z]/.test(A)&&!["String","int","double","bool"].includes(A)?`    ${O}: json['${O}'] != null ? ${A}Model.fromJson(json['${O}']) : ${A}Model(),`:`    ${O}: json['${O}'] ?? ${A==="String"?"''":"0"},`).join(`
+${g.map(([O,A])=>A.startsWith("List<")?`    ${O}: (json['${O}'] as List?)?.map((e) => ${A.replace("List<","").replace(">","")}Model.fromJson(e)).toList() ?? [],`:/^[A-Z]/.test(A)&&!["String","int","double","bool"].includes(A)?`    ${O}: json['${O}'] != null ? ${A}Model.fromJson(json['${O}']) : ${A}(),`:`    ${O}: json['${O}'] ?? ${A==="String"?"''":"0"},`).join(`
 `)}
   );
 
