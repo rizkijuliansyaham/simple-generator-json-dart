@@ -54,8 +54,8 @@ ${g.map(([O,A])=>A.startsWith("List<")?`    '${O}': ${O}.map((e) => e.toJson()).
 `)}
   };
 
-  @override
-  ${_} toEntity() => ${_}(
+    @override
+    ${_} get toEntity => ${_}(
 ${g.map(([O,A])=>A.startsWith("List<")?`    ${O}: ${O}.map((e) => e.toEntity()).toList(),`:/^[A-Z]/.test(A)&&!["String","int","double","bool"].includes(A)?`    ${O}: ${O}.toEntity(),`:`    ${O}: ${O},`).join(`
 `)}
   );
